@@ -2,6 +2,7 @@ package com.syh.algorithm;
 
 
 import com.syh.algorithm.leetcode.LinkList;
+import com.syh.algorithm.leetcode.ListNode;
 
 import java.util.ArrayList;
 
@@ -13,9 +14,9 @@ public class ListNodeFromeTail {
 
     ArrayList<Integer> list = new ArrayList<>();
 
-    public static ArrayList<Integer> printListFromTailToHead(LinkList.ListNode listNode) {
+    public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> arrayList = new ArrayList<>();
-        LinkList.ListNode node = listNode;
+        ListNode node = listNode;
         while (node != null) {
             arrayList.add(0, node.val);
             node = node.next;
@@ -23,7 +24,7 @@ public class ListNodeFromeTail {
         return arrayList;
     }
 
-    public ArrayList<Integer> printListFromTailToHead_(LinkList.ListNode listNode) {
+    public ArrayList<Integer> printListFromTailToHead_(ListNode listNode) {
         if (listNode != null) {
             printListFromTailToHead_(listNode.next);
             list.add(listNode.val);

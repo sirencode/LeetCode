@@ -10,14 +10,6 @@ import java.util.Set;
  */
 public class LinkList {
 
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
 
     public static ListNode buildDeleteNode() {
         ListNode node = new ListNode(1);
